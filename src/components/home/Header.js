@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderData from "../../data/HeaderData";
 import TheHom_logo from "../../assets/TheHom_logo.png";
-import "../../styles/style.css";
+import "./style.css";
 
-function NavBar() {
+function Header() {
+  const [activeOption, setActiveOption] = useState(HeaderData[0]);
+
+  const handleClick = (item) => {
+    setActiveOption(item);
+  };
+
   return (
     <div>
       <nav className=" d-flex navbar navbar-expand-lg bg-body-tertiar">
         <div className="container">
+          {/* Logo start */}
           <a className="navbar-brand" href="/">
             <img
               src={TheHom_logo}
@@ -16,6 +23,10 @@ function NavBar() {
               width="131px"
             />
           </a>
+
+          {/* Logo end */}
+
+          {/* Toggle button start */}
           <button
             className="navbar-toggler"
             type="button"
@@ -27,33 +38,52 @@ function NavBar() {
           >
             <span className="navbar-toggler-icon "></span>
           </button>
+
+          {/* Toggle button end */}
+
+          {/* Header menu start */}
           <div
-            className="collapse navbar-collapse justify-content-end"
+            className="header-menu collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav mb-2 mb-lg-0 align-items-center justify-content-end">
               {HeaderData.map((item, index) => {
                 return (
-                  <li key={index} className={item.className}>
-                    <a href={item.path} className={item.className2}>
+                  <li key={index} className="nav-items px-2">
+                    <a
+                      href={item.path}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleClick(item);
+                      }}
+                      className={
+                        activeOption === item
+                          ? "active-option"
+                          : "inactive-option"
+                      }
+                    >
                       {item.title}
                     </a>
                   </li>
                 );
               })}
               <li className="nav-item justify-content-end">
-                <a className="nav-link justify-content-end" href="/">
+                {/* Sign in button */}
+                <div className="nav-link justify-content-end" href="/">
                   <button className="button-primary" type="submit">
                     Sign In
                   </button>
-                </a>
+                </div>
+
+                {/* Sign in button end */}
               </li>
             </ul>
           </div>
+          {/* Header menu end */}
         </div>
       </nav>
     </div>
   );
 }
 
-export default NavBar;
+export default Header;

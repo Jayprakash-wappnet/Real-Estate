@@ -1,0 +1,74 @@
+/* Header start */
+.button-primary{
+    background-color: var(--blue);
+    width: 112px;
+    height: 40px;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+
+}
+
+.active-option{
+    text-decoration: none;
+    border-bottom: 3px solid var(--blue) ;
+}
+
+.inactive-option{
+    text-decoration: none;
+    color: black;
+}
+
+/* Header end */
+
+
+
+/* Banner section start */
+.banner-color{
+    background-color: var(--bannercolor) ;
+    width: 100%;
+}
+
+.banner-text-black{
+    color: black;
+    font-size: 54px;
+    font-weight: bold;
+
+}
+
+.banner-text-blue{
+    color: var(--blue);
+    font-size: 54px;
+    font-weight: bold;
+
+}
+
+
+
+
+.banner-title{
+    margin: 0 0rem;
+}
+
+.image-size{
+    width: 480px;
+    height: 250px;
+    position: relative;
+    bottom: 10px;
+}
+
+@media (max-width: 575.98px) { 
+    .banner-text-black{
+        font-size: 30px;
+    }
+    .banner-text-blue{
+        font-size: 30px;
+    }
+    .image-size{
+        width: 260px;
+        height: 150px;
+    }
+ }
+
+/* banner section end */

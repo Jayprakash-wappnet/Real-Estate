@@ -1,33 +1,28 @@
 const HeaderData = [
   {
+    id: 1,
     title: "Home",
     path: "/",
-    className: "nav-items",
-    className2: "nav-link",
   },
   {
+    id: 2,
     title: "About",
     path: "/about",
-    className: "nav-items",
-    className2: "nav-link",
   },
   {
+    id: 3,
     title: "Service",
     path: "/service",
-    className: "nav-items",
-    className2: "nav-link",
   },
   {
+    id: 4,
     title: "Blog",
     path: "/blog",
-    className: "nav-items",
-    className2: "nav-link",
   },
   {
-    title: "contact",
+    id: 5,
+    title: "Contact",
     path: "/contact",
-    className: "nav-items",
-    className2: "nav-link",
   },
 ];
 

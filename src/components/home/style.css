@@ -20,14 +20,20 @@
     color: black;
 }
 
-/* Header end */
+@media (max-width: 767.98px) { 
+    .header-menu{
+        width: 65% !important;
+    }
+ }
 
+/* Header end */
 
 
 /* Banner section start */
 .banner-color{
     background-color: var(--bannercolor) ;
-    width: 100%;
+    /* width: 100%; */
+    height: 345px;
 }
 
 .banner-text-black{
@@ -43,9 +49,6 @@
     font-weight: bold;
 
 }
-
-
-
 
 .banner-title{
     margin: 0 0rem;
@@ -72,3 +75,66 @@
  }
 
 /* banner section end */
+
+/* Searchbar Section start */
+
+.active-section  {
+    text-decoration: none;
+    font-weight: bold ;
+    color: #000000;
+    border-bottom: 3px solid black ;
+}
+
+.inactive-section{
+    text-decoration: none;
+    font-weight: bold ;
+    color: #0000006a;
+}
+
+
+.section-color{
+    background-color: var(--sectioncolor) ;
+    height: 95px;
+    /* width: 800px; */
+    justify-content: center;
+    align-items: center;
+   display: inline-block;
+   border-radius: 12px;
+   padding-left: 160px;
+    padding-top: 20px;
+    padding-right: 160px;
+    padding-bottom: 97px;
+}
+
+
+
+.dummy-demo{
+    background-color: #ffffff ;
+    height: 100px;
+    /* width: 800px; */
+    justify-content: center;
+    align-items: center;
+   display: inline-block;
+   border-radius: 12px;
+}
+
+
+.search-input{
+    width: 500px;
+}
+
+
+.button-margin{
+    margin-left: 20px;
+}
+
+@media (min-width: 992px) { 
+    .section-position{
+        bottom: 55px;
+        position: relative;
+        padding: 2px;
+    }
+}
+/* Searchbar Section end */
+
+

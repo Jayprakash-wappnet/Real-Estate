@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import Header from "./Header";
+import SearchBar from "./SearchBar";
 import "./style.css"
 const index = () => {
   
@@ -10,6 +11,7 @@ const index = () => {
 
       <Banner/>
       </div>
+      <SearchBar/>
     </div>
   );
 };

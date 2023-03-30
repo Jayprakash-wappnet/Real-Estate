@@ -30,9 +30,9 @@ function Header() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -43,9 +43,14 @@ function Header() {
 
           {/* Header menu start */}
           <div
-            className="header-menu collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
+            className="header-menu offcanvas offcanvas-end justify-content-center d-block "
+            id="offcanvasNavbar"
+            tabindex="-1"
+            aria-labelledby="offcanvasNavbarLabel"
           >
+            <div class="offcanvas-header">
+        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
             <ul className="navbar-nav mb-2 mb-lg-0 align-items-center justify-content-end">
               {HeaderData.map((item, index) => {
                 return (

@@ -1,13 +1,13 @@
-import React from 'react'
-import Home from '../components/home/index'
-import '../styles/style.css'
+import React from "react";
+import Home from "../components/home/index";
+import "../styles/style.css";
 
 const LandingPage = () => {
   return (
     <div>
-      <Home/>
+      <Home />
     </div>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;

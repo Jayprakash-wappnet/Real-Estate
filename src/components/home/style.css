@@ -1,140 +1,247 @@
 /* Header start */
-.button-primary{
-    background-color: var(--blue);
-    width: 112px;
-    height: 40px;
-    color: #ffffff;
-    border: none;
-    border-radius: 16px;
-    font-size: 16px;
-
+.button-primary {
+  background-color: var(--blue);
+  width: 112px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
 }
 
-.active-option{
-    text-decoration: none;
-    border-bottom: 3px solid var(--blue) ;
+.active-option {
+  text-decoration: none;
+  border-bottom: 3px solid var(--blue);
 }
 
-.inactive-option{
-    text-decoration: none;
-    color: black;
+.inactive-option {
+  text-decoration: none;
+  color: black;
 }
 
-@media (max-width: 767.98px) { 
-    .header-menu{
-        width: 65% !important;
-    }
- }
+@media (max-width: 767.98px) {
+  .header-menu {
+    width: 65% !important;
+  }
+}
 
 /* Header end */
 
-
 /* Banner section start */
-.banner-color{
-    background-color: var(--bannercolor) ;
-    /* width: 100%; */
-    height: 345px;
+.banner-color {
+  background-color: var(--bannercolor);
+  height: 345px;
 }
 
-.banner-text-black{
-    color: black;
-    font-size: 54px;
-    font-weight: bold;
-
+.banner-text-black {
+  color: black;
+  font-size: 54px;
+  font-weight: bold;
 }
 
-.banner-text-blue{
-    color: var(--blue);
-    font-size: 54px;
-    font-weight: bold;
-
+.banner-text-blue {
+  color: var(--blue);
+  font-size: 54px;
+  font-weight: bold;
 }
 
-.banner-title{
-    margin: 0 0rem;
+.banner-title {
+  margin: 0 0rem;
 }
 
-.image-size{
-    width: 480px;
-    height: 250px;
-    position: relative;
-    bottom: 10px;
+.image-size {
+  width: 480px;
+  height: 250px;
+  position: relative;
+  bottom: 10px;
 }
 
-@media (max-width: 575.98px) { 
-    .banner-text-black{
-        font-size: 30px;
-    }
-    .banner-text-blue{
-        font-size: 30px;
-    }
-    .image-size{
-        width: 260px;
-        height: 150px;
-    }
- }
+@media (max-width: 768px) {
+  .banner-text-black {
+    font-size: 30px;
+    margin: 10px 0px;
+  }
+  .banner-text-blue {
+    font-size: 30px;
+    margin: 10px 0px;
+  }
+  .image-size {
+    width: 260px;
+    height: 150px;
+    margin: 40px 0px;
+  }
+}
 
 /* banner section end */
 
 /* Searchbar Section start */
 
-.active-section  {
-    text-decoration: none;
-    font-weight: bold ;
-    color: #000000;
-    border-bottom: 3px solid black ;
+.active-section {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 3px solid black;
 }
 
-.inactive-section{
-    text-decoration: none;
-    font-weight: bold ;
-    color: #0000006a;
+.inactive-section {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0000006a;
 }
 
-
-.section-color{
-    background-color: var(--sectioncolor) ;
-    height: 95px;
-    /* width: 800px; */
-    justify-content: center;
-    align-items: center;
-   display: inline-block;
-   border-radius: 12px;
-   padding-left: 160px;
-    padding-top: 20px;
-    padding-right: 160px;
-    padding-bottom: 97px;
+.section-color {
+  background-color: var(--sectioncolor);
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  border-radius: 12px;
+  padding-left: 160px;
+  padding-top: 20px;
+  padding-right: 160px;
+  padding-bottom: 97px;
 }
 
-
-
-.dummy-demo{
-    background-color: #ffffff ;
-    height: 100px;
-    /* width: 800px; */
-    justify-content: center;
-    align-items: center;
-   display: inline-block;
-   border-radius: 12px;
+.dummy-demo {
+  background-color: #ffffff;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  border-radius: 12px;
 }
 
-
-.search-input{
-    width: 500px;
+.button-margin {
+  margin-left: 20px;
 }
 
-
-.button-margin{
-    margin-left: 20px;
+@media (max-width: 768px) {
+  .section-color {
+    padding: 0px;
+  }
+  .display-button {
+    display: block;
+  }
+  .input-search {
+    width: 200px;
+    padding: 5px 0px;
+    border: none;
+  }
+  .drop-down {
+    width: 200px;
+    padding: 5px 0px;
+    border: none;
+  }
+  .dummy-demo {
+    width: 310px;
+    overflow-x: scroll;
+    height: 120px;
+  }
 }
 
-@media (min-width: 992px) { 
-    .section-position{
-        bottom: 55px;
-        position: relative;
-        padding: 2px;
-    }
+@media (min-width: 768px) {
+  .banner {
+    display: flex;
+  }
+
+  .section-color {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .banner-text-black {
+    font-size: 40px;
+  }
+  .banner-text-blue {
+    font-size: 40px;
+  }
+  .section-position {
+    bottom: 56px;
+    position: relative;
+    padding: 1px;
+  }
+  .display-button {
+    display: flex;
+  }
+  .input-search {
+    width: 400px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: none;
+  }
+  .drop-down {
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-position {
+    bottom: 55px;
+    position: relative;
+    padding: 2px;
+  }
+  .banner-text-black {
+    font-size: 54px;
+  }
+  .banner-text-blue {
+    font-size: 54px;
+  }
+  .display-button {
+    display: flex;
+  }
+  .input-search {
+    width: 400px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: none;
+  }
+  .drop-down {
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: none;
+  }
 }
 /* Searchbar Section end */
 
+/* What we do section start */
+.title-text {
+  color: var(--blue);
+}
+.heading-text {
+  color: #000000;
+}
 
+.seemore-button {
+  background-color: var(--blue);
+  color: #ffffff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 200px;
+  height: 35px;
+  border: none;
+  position: relative;
+  right: 17px;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+}
+.card-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  margin-top: 20px;
+}
+
+.card-text {
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* What we do section end */

@@ -45,12 +45,17 @@ function Header() {
           <div
             className="header-menu offcanvas offcanvas-end justify-content-center d-block "
             id="offcanvasNavbar"
-            tabindex="-1"
+            tabIndex="-1"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
-        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
+            <div className="offcanvas-header">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
             <ul className="navbar-nav mb-2 mb-lg-0 align-items-center justify-content-end">
               {HeaderData.map((item, index) => {
                 return (

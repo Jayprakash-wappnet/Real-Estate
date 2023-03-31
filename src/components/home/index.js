@@ -1,17 +1,17 @@
 import Banner from "./Banner";
 import Header from "./Header";
 import SearchBar from "./SearchBar";
-import "./style.css"
+import WhatWeDo from "./WhatWeDo";
+import "./style.css";
 const index = () => {
-  
   return (
     <div>
       <Header />
       <div className="banner-color">
-
-      <Banner/>
+        <Banner />
       </div>
-      <SearchBar/>
+      <SearchBar />
+      <WhatWeDo/>
     </div>
   );
 };

@@ -1,20 +1,18 @@
-:root{
-
-    --blue: #3D73FF;
-    --bannercolor: #E6EDFF;
-    --sectioncolor: #EEF3FE;
-    }
-body{
-    margin: 0;
-    padding: 0;
+:root {
+  --blue: #3d73ff;
+  --bannercolor: #e6edff;
+  --sectioncolor: #eef3fe;
 }
-.button-secondary{
-background-color: var(--blue);
-width: 112px;
-height: 40px;
-color: #ffffff;
-border: none;
-border-radius: 10px;
-font-size: 18px;
-
+body {
+  margin: 0;
+  padding: 0;
+}
+.button-secondary {
+  background-color: var(--blue);
+  width: 112px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
 }

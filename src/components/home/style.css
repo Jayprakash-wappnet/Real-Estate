@@ -19,9 +19,15 @@
   color: black;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 576px) {
   .header-menu {
-    width: 65% !important;
+    width: 45% !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-menu {
+    width: 30%!important;
   }
 }
 
@@ -245,3 +251,95 @@
   color: rgba(0, 0, 0, 0.5);
 }
 /* What we do section end */
+
+/* Property Section start */
+.card {
+  width: 18rem;
+  --bs-card-border-color: #000000;
+  --bs-card-border-width: 1px;
+}
+
+.amount {
+  color: var(--blue);
+}
+
+.location-icon {
+  margin-right: 10px;
+}
+
+.icon-size {
+  width: 17px;
+  margin-right: 13px;
+}
+
+.profile-size {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.like-share {
+  width: 17px;
+  margin-right: 15px;
+}
+
+.for-sale-button {
+  width: 130px;
+  background-color: var(--blue);
+  color: #ffffff;
+  border-top-left-radius: 15px;
+  border: none;
+  position: absolute;
+  /* bottom: 196px; */
+  /* right: 79px; */
+}
+
+/* Property Section end */
+
+/* featured property section start */
+.featured-property {
+  background-color: #e6edff;
+}
+.heading-feature-property {
+  padding-top: 40px;
+}
+.featured-property-image {
+  padding: 15px;
+}
+.featured-property-see-all-button {
+  padding-bottom: 50px;
+}
+/* featured property section end */
+
+/* Footer section start */
+
+.footer {
+  background-color: #000000;
+}
+
+.footer-icon {
+  height: 80px;
+  padding-top: 30px;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+/* Footer section end */
+
+
+/* media query for Md and sm to make site responsive */
+
+@media (max-width: 991.75px) {
+  .card{
+      width: 460px;
+  }
+}
+
+@media (max-width: 575.75px) {
+  .card{
+      width: 300px;
+  }
+}

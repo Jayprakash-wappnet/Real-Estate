@@ -12,7 +12,7 @@ const SearchBar = () => {
     <div className="dummy-demo section-position">
       <div className="section-color ">
         {/* section option start */}
-        <div className="d-flex align-items-center justify-content-center flex-nowrap">
+        <div className="d-flex align-items-center justify-content-center ">
           {SectionData.map((section, index) => {
             return (
               <div key={index} className="me-5 ">

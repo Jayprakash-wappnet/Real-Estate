@@ -1,5 +1,8 @@
 import Banner from "./Banner";
+import FeaturedProperties from "./FeaturedProperties";
+import Footer from "./Footer";
 import Header from "./Header";
+import Property from "./Property";
 import SearchBar from "./SearchBar";
 import WhatWeDo from "./WhatWeDo";
 import "./style.css";
@@ -11,7 +14,10 @@ const index = () => {
         <Banner />
       </div>
       <SearchBar />
-      <WhatWeDo/>
+      <WhatWeDo />
+      <Property />
+      <FeaturedProperties />
+      <Footer />
     </div>
   );
 };

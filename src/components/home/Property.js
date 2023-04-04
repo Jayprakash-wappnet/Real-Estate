@@ -12,21 +12,33 @@ import React from "react";
 const Property = () => {
   return (
     <div className="container mt-5">
+      {/* Property Heading Start */}
       <div className="heading">
         <h3 className="title-text">OUR PROPERTY</h3>
         <h2>LATEST PROPERTY</h2>
       </div>
+      {/* Property Heading end */}
 
+      {/* Property details card start */}
       <div className="d-lg-flex d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly">
         {PropertyData.map((cardItem, index) => {
           return (
             <div className="card mt-5" key={index}>
+              {/* For Sale Button Start */}
               <button className="for-sale-button"> For Sale </button>
+              {/* For Sale Button Start */}
+
+              {/* Property Card's Image Start */}
+
               <img
                 className="card-img-top"
                 src={cardItem.propertyImage}
                 alt="Card-cap"
               />
+              {/* Property Card's Image end */}
+
+              {/* Property Card's Details start */}
+
               <div className=" card-body">
                 <div className="d-flex card-title justify-content-between">
                   <div className="">
@@ -82,14 +94,18 @@ const Property = () => {
                   </div>
                 </div>
               </div>
+              {/* Property Card's Details end */}
             </div>
           );
         })}
       </div>
+      {/* Property details cars end */}
 
+      {/* See all Propert Button start */}
       <div>
         <button className="button-see-all mt-5"> See All</button>
       </div>
+      {/* See all Propert Button end */}
     </div>
   );
 };

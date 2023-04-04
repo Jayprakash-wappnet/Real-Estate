@@ -11,17 +11,17 @@ const Banner = () => {
           <h1 className="banner-text-black">
             Find Your Best <br /> Smart
             <span className="banner-text-blue">
-              {" "}
               Real <br /> Estate
             </span>
           </h1>
         </div>
       </div>
 
-      {/* Image */}
+      {/* Image start */}
       <div className="banner-image col-lg-7">
         <img src={House} alt="Not Found" className="image-size" />
       </div>
+      {/* Image end */}
     </div>
   );
 };

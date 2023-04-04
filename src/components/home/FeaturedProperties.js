@@ -7,21 +7,29 @@ import Location_icon from "../../assets/Location_icon.png";
 
 const FeaturedProperties = () => {
   return (
+    // Heading For Featured properties start
     <div className="featured-property mt-5">
       <div className="heading heading-feature-property">
         <h3 className="title-text">PROPERTIES</h3>
         <h2>FEATURED PROPERTIES</h2>
       </div>
+      {/* Heading For Featured properties end */}
 
+      {/* Property details card start */}
       <div className="d-flex flex-column align-items-center d-lg-flex  flex-lg-row justify-content-evenly">
         {FeaturedPropertyData.map((propertyItem, index) => {
           return (
             <div className="card mt-5" key={index}>
+              {/* Featured Property Image Start */}
               <img
                 className="card-img-top featured-property-image"
                 src={propertyItem.PropertyImage}
                 alt="Card-cap"
               />
+              {/* Featured Property Image end */}
+
+              {/* Featured Property details Start */}
+
               <div className=" card-body">
                 <div className="d-flex card-title justify-content-between">
                   <div className="text-start">
@@ -40,7 +48,7 @@ const FeaturedProperties = () => {
                     />
                   </div>
                   <div>Mirpur City, Dhaka</div>
-                </div>{" "}
+                </div>
                 <hr />
                 <div className="propert-details d-flex justify-content-between mt-2">
                   <div className="badroom-details d-flex">
@@ -63,13 +71,20 @@ const FeaturedProperties = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Featured Property details end */}
             </div>
           );
         })}
       </div>
+
+      {/* Property details card end */}
+
+      {/* See all Propert Button start */}
       <div className="featured-property-see-all-button">
         <button className="button-see-all  mt-5"> See All</button>
       </div>
+      {/* See all Propert Button end */}
     </div>
   );
 };

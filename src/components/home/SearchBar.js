@@ -48,10 +48,9 @@ const SearchBar = () => {
 
             <select className="drop-down" aria-label="Default select example">
               <option defaultValue>Advanced filter</option>
-              <option value="1">Rome</option>
-              <option value="2">Giza</option>
-              <option value="3">Sabinas</option>
-              <option value="3">Beijing </option>
+              <option value="1">Buy</option>
+              <option value="2">Sell</option>
+              <option value="3">Rent</option>
             </select>
           </div>
           <div>

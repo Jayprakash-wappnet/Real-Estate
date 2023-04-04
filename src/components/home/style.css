@@ -27,7 +27,7 @@
 
 @media (min-width: 576px) {
   .header-menu {
-    width: 30%!important;
+    width: 30% !important;
   }
 }
 
@@ -121,7 +121,7 @@
   margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 690px) {
   .section-color {
     padding: 0px;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 690px) {
   .banner {
     display: flex;
   }
@@ -169,7 +169,7 @@
     display: flex;
   }
   .input-search {
-    width: 400px;
+    width: 310px;
     border-radius: 5px;
     padding: 5px 0px;
     border: none;
@@ -179,6 +179,15 @@
     border-radius: 5px;
     padding: 5px 0px;
     border: none;
+  }
+  .banner-color {
+    height: 285px;
+  }
+
+  .section-position {
+    bottom: 20px;
+    position: relative;
+    padding: 2px;
   }
 }
 
@@ -208,6 +217,9 @@
     border-radius: 5px;
     padding: 5px 0px;
     border: none;
+  }
+  .banner-color {
+    height: 314px;
   }
 }
 /* Searchbar Section end */
@@ -329,17 +341,16 @@
 }
 /* Footer section end */
 
-
-/* media query for Md and sm to make site responsive */
+/* media query for Md and sm to made site responsive */
 
 @media (max-width: 991.75px) {
-  .card{
-      width: 460px;
+  .card {
+    width: 460px;
   }
 }
 
 @media (max-width: 575.75px) {
-  .card{
-      width: 300px;
+  .card {
+    width: 300px;
   }
 }
